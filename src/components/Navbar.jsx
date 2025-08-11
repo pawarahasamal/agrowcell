@@ -197,13 +197,13 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <div className="hidden lg:flex items-center space-x-4">
-            <Link to="/home" className="hover:text-[#E7EFC7]">Home</Link>
+            <Link to="/home" className="hover:text-[#E7EFC7] text-md font-semibold">Home</Link>
 
             {Object.keys(menuItems).map((key) => (
               <div key={key} className="relative">
                 <button
                   onClick={() => toggleDropdown(key)}
-                  className="hover:text-[#E7EFC7] px-3 py-2 rounded-md text-sm font-medium flex items-center"
+                  className="hover:text-[#E7EFC7] px-3 py-2 rounded-md text-md font-medium flex items-center"
                 >
                   {menuItems[key].title}
                   <MdKeyboardArrowDown
@@ -224,7 +224,7 @@ const Navbar = () => {
                           className="group flex items-start p-2 rounded-lg hover:bg-[#E7EFC7] hover:text-black transition-colors"
                         >
                           <div className="px-4">
-                            <p className="text-sm font-medium">
+                            <p className="text-md font-medium">
                               {item.name}
                             </p>
                           </div>
@@ -236,9 +236,9 @@ const Navbar = () => {
               </div>
             ))}
 
-            <Link to="/gallery" className="hover:text-[#E7EFC7]">Gallery</Link>
-            <Link to="/about" className="hover:text-[#E7EFC7]">About</Link>
-            <Link to="/contact" className="hover:text-[#E7EFC7]">Contact</Link>
+            <Link to="/gallery" className="hover:text-[#E7EFC7] text-md font-semibold">Gallery</Link>
+            <Link to="/about" className="hover:text-[#E7EFC7] text-md font-semibold">About</Link>
+            <Link to="/contact" className="hover:text-[#E7EFC7] text-md font-semibold">Contact</Link>
           </div>
 
           {/* Hamburger menu icon for mobile */}
@@ -250,13 +250,13 @@ const Navbar = () => {
         {/* Mobile Menu with transparent blur */}
         {isMenuOpen && (
           <div className="lg:hidden bg-white/10 backdrop-blur-sm px-4 py-2 space-y-2 rounded-md text-white">
-            <Link to="/home" className="block hover:text-[#E7EFC7]">Home</Link>
+            <Link to="/home" className="block hover:text-[#E7EFC7] text-md font-semibold">Home</Link>
 
             {/* Mobile Dropdown */}
             <div>
               <button
                 onClick={() => toggleDropdown('products')}
-                className="flex items-center w-full hover:text-[#E7EFC7]"
+                className="flex items-center w-full hover:text-[#E7EFC7] text-md font-semibold"
               >
                 Products
                 <MdKeyboardArrowDown
@@ -271,7 +271,7 @@ const Navbar = () => {
                     <Link
                       key={idx}
                       to={`/products/${item.name.toLowerCase().replace(/\s+/g, '-')}`}
-                      className="block hover:text-[#E7EFC7]"
+                      className="block hover:text-[#E7EFC7] text-md font-semibold"
                     >
                       {item.name}
                     </Link>
@@ -280,9 +280,9 @@ const Navbar = () => {
               )}
             </div>
 
-            <Link to="/gallery" className="block hover:text-[#E7EFC7]">Gallery</Link>
-            <Link to="/about" className="block hover:text-[#E7EFC7]">About</Link>
-            <Link to="/contact" className="block hover:text-[#E7EFC7]">Contact</Link>
+            <Link to="/gallery" className="block hover:text-[#E7EFC7] text-md font-semibold">Gallery</Link>
+            <Link to="/about" className="block hover:text-[#E7EFC7] text-md font-semibold">About</Link>
+            <Link to="/contact" className="block hover:text-[#E7EFC7] text-md font-semibold">Contact</Link>
           </div>
         )}
       </div>
