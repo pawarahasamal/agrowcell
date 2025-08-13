@@ -1,9 +1,12 @@
 import React from "react";
 import logo from "../assets/AG-lOGO.png"; // <-- replace with your logo path
-
+// bg-[#abd69a52]
 export default function Footer() {
   return (
-    <footer className="backdrop-blur-md bg-[#abd69a52] text-gray-800 py-8 mt-5 ">
+    <footer className="backdrop-blur-md bg-white text-gray-800 py-8 mt-5 "> 
+      <div className="mt-8">
+        <div className="border-t-2 border-dotted border-gray-400"><br></br><br></br></div>
+      </div>
       <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 text-base text-center md:text-left">
         
         {/* Company Info */}
@@ -86,7 +89,7 @@ export default function Footer() {
           <img
             src={logo}
             alt="Company Logo"
-            className="w-36 md:w-40 lg:w-48 drop-shadow-lg"
+            className="w-40 md:w-40 lg:w-68 drop-shadow-lg"
           />
         </div>
       </div>

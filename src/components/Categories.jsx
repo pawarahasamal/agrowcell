@@ -44,7 +44,7 @@ const Categories = () => {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Section title */}
         <div className="mb-6 flex flex-col items-center gap-2 sm:mb-8 text-center">
-          <h2 className="text-center text-4xl md:text-6xl lg:text-7xl font-bold leading-tight text-[#025c0e]">
+          <h2 className="text-center text-4xl md:text-6xl lg:text-6xl font-bold leading-tight text-[#025c0e]">
             AGROWCELL <br className="hidden sm:block" />
             PRODUCTS
           </h2>
