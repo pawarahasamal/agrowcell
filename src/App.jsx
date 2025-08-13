@@ -1,5 +1,6 @@
 
 import './App.css'
+import Categories from './components/Categories'
 import Details from './components/Details'
 import Footer from './components/Footer'
 import Hero from './components/Hero'
@@ -13,6 +14,7 @@ function App() {
       <Navbar />
       <Hero />
       <Details />
+      <Categories />
       <Testimonial />
       <Footer />
     </>
