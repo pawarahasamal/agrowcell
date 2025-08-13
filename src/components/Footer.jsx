@@ -27,22 +27,22 @@ export default function Footer() {
           <ul className="space-y-2">
             <li>
               <a href="./about.html" className="hover:text-blue-600">
-                ℹ️ About Us
+                🔹 About Us
               </a>
             </li>
             <li>
               <a href="./product.html" className="hover:text-blue-600">
-                🛒 Product
+                🔹 Product
               </a>
             </li>
             <li>
               <a href="./contact.html" className="hover:text-blue-600">
-                📞 Contact
+                🔹 Contact
               </a>
             </li>
             <li>
               <a href="#" className="hover:text-blue-600">
-                📜 Terms of Use
+                🔹 Terms of Use
               </a>
             </li>
           </ul>

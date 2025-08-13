@@ -3,31 +3,31 @@ import React, { useState, useEffect } from "react";
 const testimonials = [
   {
     name: "John Doe",
-    role: "CEO, GreenTech",
+    role: "",
     text: "This company exceeded our expectations with outstanding quality and service.",
     image: "https://randomuser.me/api/portraits/men/32.jpg",
   },
   {
     name: "Sarah Lee",
-    role: "Marketing Head, FreshFarm",
-    text: "Their professionalism and dedication are unmatched. Highly recommend them!",
+    role: "",
+    text: "The authenticity and freshness of Agrowcell’s Ceylon cinnamon and tropical fruits are unmatched. Their commitment to sustainable sourcing is exactly what we value in a partner.",
     image: "https://randomuser.me/api/portraits/women/44.jpg",
   },
   {
     name: "David Smith",
-    role: "Operations Manager, EcoGoods",
-    text: "Working with them was a great experience. They truly care about customer needs.",
+    role: "",
+    text: "I've been using Cocopeat for my greenhouse, and it's perfect for retaining moisture while keeping the roots healthy. Highly recommended for any gardener.",
     image: "https://randomuser.me/api/portraits/men/65.jpg",
   },
   {
     name: "Emily Carter",
-    role: "Founder, OrganicLife",
+    role: "",
     text: "Absolutely the best service we've had in years. Trustworthy and reliable!",
     image: "https://randomuser.me/api/portraits/women/68.jpg",
   },
   {
     name: "Michael Brown",
-    role: "Director, Nature's Choice",
+    role: "",
     text: "Fantastic team! They delivered exactly what they promised and more.",
     image: "https://randomuser.me/api/portraits/men/85.jpg",
   },
@@ -78,7 +78,7 @@ const Testimonial = () => {
           What Our Clients Say
         </h2>
         <p className="text-gray-600 max-w-2xl mx-auto mb-10">
-          We take pride in delivering top-notch service to our clients. Here's what they have to say:
+          We take pride in delivering top-notch service to our clients.
         </p>
 
         <div
