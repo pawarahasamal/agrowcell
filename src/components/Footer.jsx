@@ -29,23 +29,18 @@ export default function Footer() {
           <h5 className="font-semibold mb-4">🔗 Quick Links</h5>
           <ul className="space-y-2">
             <li>
-              <a href="./about.html" className="hover:text-blue-600">
+              <a href="./about" className="hover:text-blue-600">
                 🔹 About Us
               </a>
             </li>
             <li>
-              <a href="./product.html" className="hover:text-blue-600">
-                🔹 Product
+              <a href="./products" className="hover:text-blue-600">
+                🔹 Products
               </a>
             </li>
             <li>
-              <a href="./contact.html" className="hover:text-blue-600">
+              <a href="./contact" className="hover:text-blue-600">
                 🔹 Contact
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-blue-600">
-                🔹 Terms of Use
               </a>
             </li>
           </ul>

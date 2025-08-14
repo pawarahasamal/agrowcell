@@ -1,11 +1,11 @@
 import React from "react";
 import bannerImage from "../../assets/Tea.jpg"; // Banner image
 import cinnamonImg from "../../assets/spices.jpg"; 
-import spicesImg from "../../assets/herbs.png";
+import spicesImg from "../../assets/Coconut-from-ceylon.png";
 import cardamomImg from "../../assets/spices.jpg";
 import clovesImg from "../../assets/spices.jpg";
 
-const Herbs = () => {
+const Coconutproducts = () => {
   return (
     <div>
       {/* Banner Section */}
@@ -131,4 +131,4 @@ const Herbs = () => {
   );
 };
 
-export default Herbs;
+export default Coconutproducts;

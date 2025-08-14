@@ -1,8 +1,12 @@
 import React from 'react'
 // import heroImage from '../assets/Herogif.gif'
-import heroImage from '../assets/coconutg.jpg'
+import heroImage from '../assets/coconutg.jpg';
+import { useNavigate } from "react-router-dom";
 
 const Details = () => {
+
+    const navigate = useNavigate();
+
   return (
     // <section id='home' className='container flex flex-col md:flex-row justify-between items-center mx-auto pt-44 pb-6 px-4 sm:px-6 lg:px-8'>
     <section id='home' className='min-h-screen container flex flex-col md:flex-row justify-between items-center mx-auto py-20 pb-6 px-4 sm:px-6 lg:px-8'>
@@ -35,7 +39,14 @@ const Details = () => {
                 We started as a small scale company owing our own spice plantation in Sri Lanka and now, we have expanded with a strong network of growers around the country to cater the current demand.
             </p>
 
-            <button className='bg-[#8A784E] text-white px-8 py-4 font-medium rounded-xl hover:bg-[#3B3B1A] cursor-pointer transition-all hover:shadow-lg hover:shadow-[#64643f]'>
+            {/* <button className='bg-[#8A784E] text-white px-8 py-4 font-medium rounded-xl hover:bg-[#3B3B1A] cursor-pointer transition-all hover:shadow-lg hover:shadow-[#64643f]'>
+                More About ⏬
+            </button> */}
+
+            <button
+                className='bg-[#8A784E] text-white px-8 py-4 font-medium rounded-xl hover:bg-[#3B3B1A] cursor-pointer transition-all hover:shadow-lg hover:shadow-[#64643f]'
+                onClick={() => navigate("/about")}
+            >
                 More About ⏬
             </button>
 
